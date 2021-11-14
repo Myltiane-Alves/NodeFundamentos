@@ -6,11 +6,11 @@ app.get('/courses', (request, response) => {
     return response.json("Curso 1", "Curso 2", "Curso 3");
 });
 
-app.get('/courses', (request, response) => {
+app.post('/courses', (request, response) => {
     return response.json("Curso 1", "Curso 2", "Curso 3", "Curso 4");
 });
 
-app.get('/courses/:id', (request, response) => {
+app.put('/courses/:id', (request, response) => {
     return response.json("Curso 6", "Curso 2", "Curso 3" , "Curso 4");
 });
 
